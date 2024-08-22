@@ -316,7 +316,7 @@ section.Contatos .flex {
   }
   section.portifolio .flex {
     margin-top: 1;
-    gap: 26px;
+    gap: 60px;
   }
   .menu-desktop {
     display: none;
@@ -393,5 +393,13 @@ section.Contatos .flex {
   }
   .bi-list::before {
     margin: 10px 0 50px;
+  }
+  section.portifolio {
+    padding: 80px 8%;
+  }
+  .img-port {
+    width: 100px;
+    max-width: 360px;
+    margin: 0 auto;
   }
 }
