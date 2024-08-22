@@ -394,11 +394,12 @@ section.Contatos .flex {
   .bi-list::before {
     margin: 10px 0 50px;
   }
-  section.portifolio {
+ section.portifolio {
     padding: 80px 8%;
   }
   .img-port {
-    width: 100px;
+    width: 100%;
+    max-width: 360px;
     margin: 0 auto;
   }
 }
