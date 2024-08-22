@@ -399,7 +399,6 @@ section.Contatos .flex {
   }
   .img-port {
     width: 100px;
-    max-width: 360px;
     margin: 0 auto;
   }
 }
