@@ -286,6 +286,12 @@ section.Contatos .flex {
   .flex {
     width: 100%;
   }
+  #btn-menu {
+    display: none;
+  }
+  .btn-contato button {
+    width: 100%;
+  }
   section.topo-do-site,
   .flex {
     flex-direction: column-reverse;
@@ -322,14 +328,12 @@ section.Contatos .flex {
   }
   section.portifolio .flex {
     margin-top: 1;
-    gap: 60px;
+    gap: 26px;
   }
   .menu-desktop {
     display: none;
   }
-  .btn-contato button {
-    display: none;
-  }
+
   section.topo-do-site .flex {
     flex-direction: column-reverse;
     gap: 17px;
@@ -400,7 +404,7 @@ section.Contatos .flex {
   .bi-list::before {
     margin: 10px 0 50px;
   }
- section.portifolio {
+  section.portifolio {
     padding: 80px 8%;
   }
   .img-port {
@@ -409,13 +413,18 @@ section.Contatos .flex {
     margin: 0 auto;
   }
 }
+
 @media (max-width: 768px) {
   .menu-desktop {
     display: none;
   }
-  .btn-contato button {
+  #btn-menu {
     display: none;
   }
+  .btn-contato button {
+    width: 100%;
+  }
+
   section.topo-do-site .flex {
     flex-direction: column-reverse;
     gap: 90px;
@@ -500,3 +509,94 @@ section.Contatos .flex {
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  #btn-menu {
+    display: none;
+  }
+  section.topo-do-site .flex {
+    gap: 25px;
+    flex-direction: column-reverse;
+  }
+  .btn-contato button {
+    width: 100%;
+  }
+  .menu-desktop {
+    display: none;
+  }
+  .btn-contato button {
+    padding: 14px 16px;
+  }
+  .menu-celular {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999999999;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    display: block;
+  }
+  .menu-celular.abrir-menu {
+    width: 77%;
+  }
+  .menu-celular.abrir-menu ~ .overlay-menu {
+    display: block;
+  }
+  .menu-celular nav ul {
+    text-align: right;
+    list-style: none;
+  }
+  .menu-celular nav ul li {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+
+  .menu-celular nav ul li a:hover {
+    background-color: black;
+  }
+  .menu-celular .botao-fechar i {
+    color: white;
+    font-size: 40px;
+  }
+  .menu-celular .botao-fechar {
+    padding: 20px 5%;
+  }
+  .btn-menu i {
+    color: #fff;
+    font-size: 50px;
+    margin-right: 11px;
+  }
+  .btn-menu {
+    margin-top: 9px;
+  }
+  .overlay-menu {
+    background-color: #0000007c;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+  }
+  .bi-list::before {
+    margin: 10px 0 50px;
+  }
+  section.topo-do-site .flex {
+    width: 100%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1132px) {
+  #btn-txt-sobre {
+    padding: 14px 19px;
+  }
+  section.topo-do-site .flex {
+    width: 100%;
+  }
+}
