@@ -36,7 +36,7 @@
     origin: "left",
   });
 
-/*menu celular*/
+/*menu celular/celular maior*/
 let btnMenu = document.getElementById("abrir-menu");
 let menu = document.getElementById("menu-celular");
 let overlay = document.getElementById("overlay-menu");
