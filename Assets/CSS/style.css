@@ -72,6 +72,7 @@ header nav ul li {
   display: inline-block;
   padding: 0 40px;
 }
+
 .logolv img {
   width: 165px;
   height: 156px;
@@ -201,8 +202,10 @@ section.portifolio {
   box-shadow: 0 0 40px 10px #ffffff19;
 }
 section.portifolio .flex {
-  justify-content: space-around;
+  justify-content: left;
   margin-top: 60px;
+  flex-wrap: wrap;
+  display: flex;
 }
 .img-port {
   width: 360px;
@@ -600,4 +603,3 @@ section.Contatos .flex {
     width: 100%;
   }
 }
-
